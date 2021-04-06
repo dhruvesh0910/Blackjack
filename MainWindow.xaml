@@ -1,0 +1,38 @@
+﻿<Window x:Class="BlackJack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJack"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#009933" x:Name="mainWindow">
+    <Grid>
+        <Label Visibility="Hidden" Name="playerName" Content="Dealer" HorizontalAlignment="Left" Margin="354,11,0,0" VerticalAlignment="Top" Height="44" Width="68" FontSize="20"/>
+        <Label Visibility="Hidden" Name="dealerName" Content="Player" HorizontalAlignment="Left" Margin="350,369,0,0" VerticalAlignment="Top" Height="44" Width="68" FontSize="20"/>
+        <Button Name ="stand" Visibility="Hidden" Background="Yellow" Content="Stand" IsEnabled="false" HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Width="97" Height="48" FontSize="26" Click="Button_Stand"/>
+        <Button Name="hit" Visibility="Hidden" Background="Red" Content="Hit" IsEnabled="false" HorizontalAlignment="Left" Margin="620,195,0,0" VerticalAlignment="Top" Width="97" Height="48" FontSize="26" Click="Button_Hit"/>
+        <Button Name="start" Background="Transparent" HorizontalAlignment="Left" Margin="594,272,0,0" VerticalAlignment="Top" Width="130" Height="130" FontSize="26" Click="Button_Start">
+            <Image Source="start.png" Height="98" Width="115" RenderTransformOrigin="0.455,0.065"/>
+        </Button>
+        <Label Visibility="Hidden" Name="dealer" Content="0" HorizontalAlignment="Left" Margin="556,93,0,0" VerticalAlignment="Top" FontSize="26"/>
+        <Label Visibility="Hidden" Name="dealerlabel" Content="Dealer" HorizontalAlignment="Left" Margin="618,93,0,0" VerticalAlignment="Top" FontSize="26"/>
+        <Label Visibility="Hidden" Name="player" Content="0" HorizontalAlignment="Left" Margin="556,307,0,0" VerticalAlignment="Top" FontSize="26"/>
+        <Label Visibility="Hidden" Name="playerlabel" Content="Player" HorizontalAlignment="Left" Margin="618,307,0,0" VerticalAlignment="Top" FontSize="26"/>
+        <WrapPanel Visibility="Hidden" Name="pane1" HorizontalAlignment="Left" Height="144" Margin="236,227,0,0" VerticalAlignment="Top" Width="294"/>
+        <WrapPanel Visibility="Hidden" Name="pane2" HorizontalAlignment="Left" Height="144" Margin="236,53,0,0" VerticalAlignment="Top" Width="294"/>
+        <Image Name="startImage" HorizontalAlignment="Left" Height="310" Margin="182,6,0,0" VerticalAlignment="Top" Width="438" Source="blackjack.png"/>
+        <Image Name="tableImage" Visibility="Hidden" HorizontalAlignment="Left" Height="142" Margin="2,4,0,0" VerticalAlignment="Top" Width="146" Source="chip.png"/>
+        <Label Name="tableTotal" Visibility="Hidden" FontSize="24" Content="$0" HorizontalContentAlignment="Center"  Margin="32,53,0,316" Foreground="Black" HorizontalAlignment="Left" Width="75"/>
+        <!--<Image Name="playerImage" Visibility="Hidden" Height="136" Margin="650,278,0,0" VerticalAlignment="Top" Source="chip.png" RenderTransformOrigin="0.21,0.92" HorizontalAlignment="Left" Width="135"/>-->
+        <Label Name="playerTotal" Visibility="Hidden" FontSize="24" Content="Player Bank : $1000" HorizontalContentAlignment="Center" Margin="561,371,0,0" Foreground="White" Width="223" Height="42" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <Button Visibility="Hidden" Name="reset" Background="Transparent" HorizontalAlignment="Left" Margin="8,297,0,0" VerticalAlignment="Top" Width="90" Height="89" FontSize="26" Click="Button_Reset">
+            <Image Source="reset.png" Height="92" Width="85" RenderTransformOrigin="0.455,0.065"/>
+        </Button>
+        <Button Visibility="Hidden" Name="playAgain" Background="Transparent" HorizontalAlignment="Left" Margin="100,296,0,0" VerticalAlignment="Top" Width="90" Height="89" FontSize="26" Click="Button_Again">
+            <Image Source="again.png" Height="92" Width="85" RenderTransformOrigin="0.455,0.065"/>
+        </Button>
+
+
+
+    </Grid>
+</Window>
